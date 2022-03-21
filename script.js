@@ -20,7 +20,7 @@ function calcular() {
             document.getElementById("frase").innerHTML = `Vos estas caminando...`;
         }
 
-        else
+        if(final < 54 && final > 10)
         {
             document.getElementById("frase").innerHTML = `Muy buena veocidad.`;
         }

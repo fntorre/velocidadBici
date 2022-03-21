@@ -92,6 +92,10 @@ button.reset:hover {
     line-height: 1.4;
 }
 
+#frase {
+    text-align: center;
+}
+
 @media (max-width: 768px) {
 
     .container {
