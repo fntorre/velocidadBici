@@ -7,10 +7,28 @@ function calcular() {
         let resultado = distancia / horas;
         let final = resultado.toFixed(2);
         document.getElementById("result").innerHTML = `${nombre} tu velocidad promedio en bicicleta es de ${final} km/h.`;
+
+        if(final > 55){
+            document.getElementById("frase").innerHTML = `¡Para mi que vos estas sobre una moto!`;
+        }
+
+        if(final < 10){
+            document.getElementById("frase").innerHTML = `¿Se te salio la cadena?`;
+        }
+
+        if(final < 5){
+            document.getElementById("frase").innerHTML = `Vos estas caminando...`;
+        }
+
+        else
+        {
+            document.getElementById("frase").innerHTML = `Muy buena veocidad.`;
+        }
     }
     else {
         document.getElementById("result").innerHTML = `<p class="alert">Falta uno o más datos.</p>`;
     }
+
 }
 
 function updateTextInputDist(val) {
