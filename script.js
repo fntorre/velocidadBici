@@ -13,6 +13,13 @@ function calcular() {
     }
 }
 
+function updateTextInputDist(val) {
+    document.getElementById('textInputDist').value=val + " "  + "Km."; 
+  }
+
+  function updateTextInputTiempo(val) {
+    document.getElementById('textInputTiempo').value=val  + " "  + "Minutos"; 
+  }
 function resetear() {
     location.reload()
 }
